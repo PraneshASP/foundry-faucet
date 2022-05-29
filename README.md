@@ -69,6 +69,14 @@ Then, deploy the Faucet to Kovan:
 ```
 
 
+**Verification** 
+
+Add your `ETHERSCAN_API_KEY` to the `.env` file.
+
+Then execute the `scripts/verify_faucet_kovan.sh` script.
+```sh
+./scripts/verify_faucet_kovan.sh
+```
 
 ## License
 
