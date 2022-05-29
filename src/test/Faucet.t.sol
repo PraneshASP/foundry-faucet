@@ -36,7 +36,7 @@ contract BaseSetup is Test {
 contract FaucetTest is BaseSetup {
     uint256 amountToDrip = 1;
 
-    function setup() public override {
+    function setUp() public override {
         super.setUp();
     }
 
