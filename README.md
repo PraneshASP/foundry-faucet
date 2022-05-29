@@ -1,6 +1,8 @@
 # Foundry Faucet
 
-This is a simple project that demonstrates the usage of Forge. You can find the article associated with this repo here.
+A simple project built using Foundry. This repo contains the implementation of a Faucet contract. You can find the article associated with this repo here.
+
+> This repo is created from the [forge template](https://github.com/PraneshASP/forge-template).
 ## Getting Started
 
 - Clone this repo:
