@@ -3,19 +3,21 @@
 A simple project built using Foundry. This repo contains the implementation of a Faucet contract. You can find the article associated with this repo here.
 
 > This repo is created from the [forge template](https://github.com/PraneshASP/forge-template).
+
 ## Getting Started
 
 - Clone this repo:
+
 ```sh
 git clone https://github.com/PraneshASP/foundry-faucet
 ```
 
 - Install the dependencies/libraries:
+
 ```bash
 git submodule update --init --recursive
 forge install
 ```
-
 
 ## Directory structure
 
@@ -51,10 +53,11 @@ To run tests with console outputs (`console.logs()`):
 forge test -vv
 ```
 
-
 **Deployment**
 
 Copy the .`env.example` file to `.env` and update the values.
+
+### Using `forge create`:
 
 First, deploy the MockERC20 to Kovan:
 
@@ -68,12 +71,18 @@ Then, deploy the Faucet to Kovan:
 ./scripts/deploy_faucet_kovan.sh
 ```
 
+### Using `scripts`:
 
-**Verification** 
+```bash
+npm run deploy:forge
+```
+
+**Verification**
 
 Add your `ETHERSCAN_API_KEY` to the `.env` file.
 
 Then execute the `scripts/verify_faucet_kovan.sh` script.
+
 ```sh
 ./scripts/verify_faucet_kovan.sh
 ```
@@ -82,7 +91,6 @@ Then execute the `scripts/verify_faucet_kovan.sh` script.
 
 [MIT](https://github.com/PraneshASP/foundry-faucet/blob/master/LICENSE)
 
- 
 ## Disclaimer
 
 _These smart contracts are being provided as is. No guarantee, representation or warranty is being made, express or implied, as to the safety or correctness of the user interface or the smart contracts. They have not been audited and as such there can be no assurance they will work as intended, and users may experience delays, failures, errors, omissions, loss of transmitted information or loss of funds. The creators are not liable for any of the foregoing. Users should proceed with caution and use at their own risk._
