@@ -1,0 +1,8 @@
+FaucetTest:test_drip_reduceFaucetBalance() (gas: 78152)
+FaucetTest:test_drip_revertIfLimitExceeded() (gas: 16626)
+FaucetTest:test_drip_revertIfThrottled() (gas: 77525)
+FaucetTest:test_drip_revertIfZeroAddress() (gas: 14448)
+FaucetTest:test_drip_transferToDev() (gas: 77271)
+FaucetTest:test_drip_withFuzzing(address,uint256) (runs: 256)
+FaucetTest:test_setLimit() (gas: 16655)
+FaucetTest:test_setLimit_revertIfNotOwner() (gas: 16781)
