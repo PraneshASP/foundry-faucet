@@ -1,7 +1,7 @@
 {
-  "name": "forge-erc20-template",
+  "name": "forge-faucet",
   "version": "1.0.0",
-  "description": "Forge Template for ERC-20 using Openzeppelin Contracts",
+  "description": "A simple faucet contract to demonstrate the usage of Forge",
   "directories": {
     "lib": "lib"
   },
@@ -10,11 +10,12 @@
     "sync": "make update",
     "test": "make test",
     "snapshot": "make snapshot",
-    "lint": "make lint"
+    "lint": "make lint",
+    "deploy:forge": " export $(cat .env | xargs) && forge script ./scripts/foundry/deploy_faucet.s.sol --private-key ${PRIVATE_KEY} --broadcast  --rpc-url 'https://kovan.infura.io/v3/'${INFURA_API_KEY}"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soliditylabs/forge-erc20-template.git"
+    "url": "git+https://github.com/PraneshASP/foundry-faucet.git"
   },
   "keywords": [
     "forge",
@@ -23,12 +24,12 @@
     "openzeppelin",
     "Solidity"
   ],
-  "author": "Markus Waas (mail@markuswaas.com)",
+  "author": "Pranesh A S",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/soliditylabs/forge-erc20-template/issues"
+    "url": "https://github.com/PraneshASP/foundry-faucet/issues"
   },
-  "homepage": "https://github.com/soliditylabs/forge-erc20-template#readme",
+  "homepage": "https://github.com/PraneshASP/foundry-faucet#readme",
   "devDependencies": {
     "prettier": "^2.6.2",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
